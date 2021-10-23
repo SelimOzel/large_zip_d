@@ -1,0 +1,16 @@
+.dub
+docs.json
+__dummy.html
+docs/
+/large_zip_d
+large_zip_d.so
+large_zip_d.dylib
+large_zip_d.dll
+large_zip_d.a
+large_zip_d.lib
+large_zip_d-test-*
+*.exe
+*.o
+*.obj
+*.lst
+*.zip

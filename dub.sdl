@@ -1,0 +1,5 @@
+name "large_zip_d"
+description "trying to unzip large files, larger than 4 gigs when unpacked."
+authors "sozel"
+copyright "Copyright © 2021, sozel"
+license "proprietary"
