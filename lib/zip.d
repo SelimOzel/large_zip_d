@@ -1235,12 +1235,14 @@ public:
                 // It has the effect of not requiring the 2 byte header
                 // and 4 byte trailer.
                 import std.zlib : uncompress, UnCompress;
+                /*
                 UnCompress decmp = new UnCompress;
                 foreach (chunk; de.compressedData.byChunk(4096).map!(x => decmp.uncompress(x, de.expandedSize, -15)))
                 {
                     chunk.to!string.write;
-                }                
-                // de._expandedData = cast(ubyte[]) uncompress(cast(void[]) de.compressedData, de.expandedSize, -15);
+                }         
+                */       
+                de._expandedData = cast(ubyte[]) uncompress(cast(void[]) de.compressedData, de.expandedSize, -15);
                 return de.expandedData;
 
             default:
